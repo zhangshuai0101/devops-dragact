@@ -1,7 +1,7 @@
 {
-  "name": "dragact",
-  "version": "0.2.12",
-  "description": "A powerful draggable layout system",
+  "name": "react-auto-dragact",
+  "version": "1.0.0",
+  "description": "react-dragact",
   "main": "index.js",
   "scripts": {
     "temp": "NODE_ENV=production webpack -p --config webpack.pro.config.js ",
@@ -9,8 +9,8 @@
     "build": "tsc ./src/lib",
     "dev": "webpack-dev-server --devtool eval-source-map --progress --host 127.0.0.1 --colors --content-base ./build --history-api-fallback --open"
   },
-  "author": "Fangzheng",
-  "license": "MIT",
+  "author": "zss",
+  "license": "zss",
   "devDependencies": {
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.25.0",
@@ -25,7 +25,26 @@
     "style-loader": "^0.18.2",
     "typescript": "^2.7.2",
     "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^3.1.11",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.4",
+    "@types/reselect": "^2.2.0",
+    "agentframework": "^0.9.9",
+    "babel-jest": "^22.2.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "highlightjs": "^9.10.0",
+    "jest": "^22.3.0",
+    "power-assert": "^1.4.4",
+    "prop-types": "^15.5.10",
+    "reselect": "^3.0.1",
+    "showdown": "^1.8.6",
+    "typescript-babel-jest": "^1.0.5"
+  },
+  "dependencies": {
+    "react": "^16.3.0-alpha.1",
+    "react-dom": "^16.3.0-alpha.1"
   },
   "jest": {
     "verbose": true,
@@ -47,25 +66,6 @@
       "src/frontend",
       "src/shared"
     ]
-  },
-  "dependencies": {
-    "@types/react": "^16.4.11",
-    "@types/react-dom": "^16.0.4",
-    "@types/reselect": "^2.2.0",
-    "agentframework": "^0.9.9",
-    "babel-jest": "^22.2.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "highlightjs": "^9.10.0",
-    "jest": "^22.3.0",
-    "power-assert": "^1.4.4",
-    "prop-types": "^15.5.10",
-    "react": "^16.3.0-alpha.1",
-    "react-dom": "^16.3.0-alpha.1",
-    "reselect": "^3.0.1",
-    "showdown": "^1.8.6",
-    "typescript-babel-jest": "^1.0.5"
   }
 }
 
